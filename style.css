@@ -1,0 +1,537 @@
+/* Importer la police */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Appliquer la police */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+@media screen and (max-width: 1440px) {
+  
+  main {
+    display: block;
+  }
+    
+ /* Marges body */
+    body {
+      margin: 90px;
+    }
+  
+  h1 {
+      font-weight:bold;
+      font-size: 12px;
+    }
+      
+  h2 {
+          font-weight: bold;
+          font-size: 18px;
+          margin-left: 20px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      
+  h3 {
+          font-weight: bold;
+          font-size: 8px;
+          margin: 0px;
+        }
+      
+  p {
+          font-weight: normal;
+          font-size: 6px;
+          margin: 0px;
+        }
+
+
+/* Boutons Menu */
+nav ul {
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        position: absolute;
+        right: 90px;
+        top: 20px;
+        }
+
+#menu button {
+          background-color: transparent;
+          cursor:pointer;
+          overflow: hidden;
+          outline:none;
+            } 
+
+/* Boutons Menu en haut à droite*/
+.top1 {
+      color: #0065fc;
+      border: transparent;
+      }
+          
+.top2 {
+      color: #0065fc;
+      border: transparent;
+      }
+          
+.top3 {
+        border: transparent;
+        position: absolute;
+        justify-content: space-between;
+        right: 185px;
+        top: 36px;
+        list-style-type: none;  
+      }  
+
+/* Logo */
+#logo {
+    display: flex;
+    width: 20%;
+    position: absolute;
+    justify-content: space-between;
+    left: 90px;
+    top: 20px;
+    font-size: 15px;
+  }
+
+/* Mise en forme paragraphe slogan */        
+#slogan p {
+  font-weight: normal;
+  font-size: 10px;
+  margin: 0px;
+}
+
+/* Mise en forme boutons filtres */
+#filters button {
+    display: flex;
+    border: transparent;
+    color: black;
+    background-color:transparent;
+    outline:none;
+}
+
+/* Mise en forme effet au survol des filtres */
+#filters a :hover {
+    color: #0065fc;
+    text-decoration:none;
+    outline: none;
+}
+
+/* Mise en forme de l'ensemble filtre */
+#filters {
+  display: flex;
+  justify-content: flex-start;
+  justify-content:left;
+  justify-content: space-between;
+  width: 730px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 1px;
+  text-align: center;
+}
+
+/* Mise en forme texte filtre*/
+#filters h2 {
+  font-size: 10px;
+}
+
+/* Mise en forme filtres un à un */
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: left;
+    margin:auto;
+    width:auto;
+    height: auto;
+    border: 1px solid #DEEBFF;
+    border-radius: 25px / 25px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.filter button {
+  font-weight: bold;
+}
+
+/* Icon filtres */
+.icon {
+    text-align: center;
+    margin: auto;
+    width: 20px;
+    height: auto;
+    border: 3px solid #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 25px / 25px;
+}
+
+/* Bouton recherche dans son ensemble */
+.search {
+display: flex;
+width: auto;
+background-color: transparent;
+align-items: center;
+}
+
+/* Logo recherche */
+.logorecherche {
+    text-align: center;
+    background-color: #f2f2f2;
+    color:black;
+    width: 30px;
+    height: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Input Marseille, France */
+input {
+    width: auto;
+    height: 23px;
+    border: 2px solid #f2f2f2;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+/* Bouton Rechercher*/
+.button1 button{
+    width: auto;
+    height: 25px;
+    border: 2px solid #0065fc;
+    background-color: #0065fc;
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+ 
+
+/* Mise en forme Info sous les filtres */
+#info{
+  display: flex;
+  width: auto;
+  align-items: center;
+  margin-bottom: 8px;
+  }
+  
+  #info p {
+    font-size: 8px;
+    margin-left: 8px;
+  }
+  
+.infologo {
+    text-align: center;
+    background-color:#ffffff;
+    border: 2px solid #f2f2f2;
+    width: 15px;
+    height: 15px;
+    border-radius: 25px / 25px;
+  }
+
+  /* Mise en forme Section 1 */
+#section1 {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    width: 730px;
+    height: 450px;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+  /* Mise en forme Section1 Titre */
+#section1 h2  {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+/* Mise en forme étoiles Section1 */
+.host .stars {
+    text-align: left;
+    display:flex;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 8px;
+  }
+
+/* Mise en forme texte Section1: titre du lieu */
+.host h3 {
+  text-align: left;
+  display:flex;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Mise en forme texte Section1: prix du lieux */
+.host p {
+  text-align: left;
+  display:flex;
+  padding-left: 15px;
+  font-size: 10px;
+}
+
+/* Mise en gras du prix et décollement à gauche */
+.host p strong 
+{
+  font-weight: bold;
+  padding-left: 1px;
+}
+
+/* Mise en forme Afficher plus bas de section */
+#showmore p {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+#showmore {
+  padding-left: 50px;
+  padding-top:20px;
+}
+
+/* Mise en forme Ensemble des lieux */
+#lieux {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+/* Mise en forme première ligne */
+#lieux1 {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Mise en forme deuxième ligne */
+#lieux2 {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Mise en forme contenants blancs */
+.host {
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    overflow:hidden;
+  }
+
+/* Enlever les marges de la balise figure pour pouvoir centrer les photos */
+.host figure {
+  margin: 0px;
+}
+
+/* Mise en forme des images */
+.host img {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 190px;
+    height: 80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+
+/* Mise en forme Section2 */
+  #aside {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    width: 350px;
+    height: 450px;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+
+#aside h2 {
+    padding-top: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+/* Mise en forme ensemble lieux populaires */
+  #popu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    margin:10px;
+  }
+
+/* Enlever les marges de la balisee figure */
+  .populaires figure {
+    margin: 0px;
+  }
+
+/* Mise en forme du texte à droite de la photo */
+  .populaires h3 {
+    float:right;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 10px;
+  }
+
+  .populaires p {
+    padding-left: 115px;
+    font-size: 10px;
+  }
+
+  .populaires .stars {
+    text-align: left;
+    display:flex;
+    padding-left: 15px;
+    padding-top: 60px;
+    font-size: 8px;
+  }
+
+/* Mise en forme contenants blancs */
+  .populaires {
+    display: flex;
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 350px;
+    height: 105px;
+    overflow: hidden;
+    margin-right:15px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+/* Mise en forme contenants blancs */
+   .populaires img {
+    float: left;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 95px;
+    width: 95px;
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  /* Aligner Section1 & Section2 */
+  #Align {
+    display: grid;
+    width: 1150px;
+    grid-template-columns: 700px 400px;
+    align-items: start;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+
+#section3 {
+  width: 1200px;
+}
+
+#section3 h2
+{
+  padding-top: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+#activities
+{
+  display: flex;
+  width: 1100px;
+  justify-content: space-around;
+}
+
+#activities figure {
+  margin: 0px;
+}
+
+.activites1
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 230px;
+  height: 280px;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.activites1 img
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.activites1 h3 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 220px;
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  margin: 0px;
+  border-top: transparent;
+  box-shadow: lightslategray 0px 0px 2px 0px;
+}
+
+.activites2
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 230px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.activites2 h3
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 220px;
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  margin: 0px;
+  border-top: transparent;
+  box-shadow: lightslategray 0px 0px 2px 0px;
+}
+
+.activites2 img
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.flex
+{
+  direction: initial;
+}
+
+
+#footer {
+    display: flex;
+    width: 1100px;;
+    background-color: lightslategrey;
+    justify-content: center;
+  }
+
+}
