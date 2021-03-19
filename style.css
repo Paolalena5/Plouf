@@ -11,25 +11,20 @@ a {
     color: black;
   }
 
-  ul {
+ul {
     list-style-type: none;
   }
 
 @media (min-width: 840px) and (max-width: 1440px) {
-  
-  main {
-    display: block;
-  }
     
  /* Marges body */
- main, head {
-  max-width: 1440px;
-  margin: 90px;
+ main{
+  margin: 80px;
 }
   
   h1 {
       font-weight:bold;
-      font-size: 12px;
+      font-size: 15px;
     }
       
   h2 {
@@ -54,13 +49,12 @@ a {
 
 
 /* Boutons Menu */
-nav ul {
-        display: flex;
-        width: 20%;
-        justify-content: space-between;
-        position: absolute;
-        right: 90px;
-        top: 20px;
+#menu nav {
+        display: inline-block;
+        width: auto;
+        float: right;
+        margin-right: 20%;
+        margin-top: 0px;
         }
 
 #menu button {
@@ -77,17 +71,14 @@ nav ul {
       }
           
 .top2 {
-      color: #0065fc;
+      color: black;
       border: transparent;
       }
           
 .top3 {
         border: transparent;
-        position: absolute;
-        justify-content: space-between;
-        right: 170px;
-        top: 36px;
-        list-style-type: none;  
+        color: #0065fc;
+        font-weight: bold;  
       }  
 
 /* Logo */
@@ -115,14 +106,14 @@ nav ul {
     color: black;
     background-color:transparent;
     outline:none;
-}
+    }
 
 /* Mise en forme effet au survol des filtres */
 #filters a :hover {
     color: #0065fc;
     text-decoration:none;
     outline: none;
-}
+    }
 
 /* Mise en forme de l'ensemble filtre */
 #filters {
@@ -135,13 +126,13 @@ nav ul {
   margin-bottom: 20px;
   margin-left: 1px;
   text-align: center;
-}
+  }
 
 /* Mise en forme texte filtre*/
 #filters h2 {
   font-size: 10px;
   margin-left: 0px;
-}
+  }
 
 /* Mise en forme filtres un à un */
 .filter {
@@ -153,7 +144,7 @@ nav ul {
     padding-left: 0px;
     padding-right: 10px;
     margin:auto;
-}
+  }
 
 .filter button {
   height: 20px;
@@ -161,7 +152,7 @@ nav ul {
   font-weight: bold;
   font-size: 12px;
   padding-top: 4px;
-}
+  }
 
 /* Icon filtres */
 .icon {
@@ -173,7 +164,7 @@ nav ul {
     border: 3px solid #DEEBFF;
     background-color: #DEEBFF;
     border-radius: 25px / 25px;
-}
+    }
 
 /* Bouton recherche dans son ensemble */
 .search {
@@ -194,7 +185,7 @@ align-items: center;
     border-bottom-left-radius: 5px;
     margin: 0px;
     padding: 0px;
-}
+    }
 
 /* Input Marseille, France */
 input {
@@ -205,7 +196,8 @@ input {
     padding-left: 5px;
     margin: 0px;
     padding-right: 0px;
-}
+    font-size: 12px;
+    }
 
 /* Bouton Rechercher*/
 .button1 button{
@@ -219,8 +211,11 @@ input {
     margin: 0px;
     padding: 0px;
     font-size:10px;
-}
+    }
  
+.button1 i {
+  display:none;
+  }  
 
 /* Mise en forme Info sous les filtres */
 #info{
@@ -247,6 +242,16 @@ input {
     padding-top: 3px;
   }
 
+    /* Aligner Section1 & Section2 */
+  #Align {
+  display: grid;
+  width: 1150px;
+  grid-template-columns: 700px 400px;
+  align-items: start;
+  justify-content: space-between;
+  overflow: hidden;
+  }
+
   /* Mise en forme Section 1 */
 #section1 {
     border-radius: 20px;
@@ -266,7 +271,66 @@ input {
   padding-left: 30px;
 }
 
-/* Mise en forme étoiles Section1 */
+/* Mise en forme Ensemble des lieux */
+#lieux {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+/* Mise en forme première ligne */
+#lieux1 {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Mise en forme deuxième ligne */
+#lieux2 {
+  display: flex;
+  overflow: hidden;
+}
+
+
+/* Mise en forme Afficher plus bas de section */
+#showmore a {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+#showmore {
+  padding-left: 50px;
+  padding-top:20px;
+}
+
+
+/* Mise en forme contenants blancs */
+.host {
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    overflow:hidden;
+  }
+
+/* Enlever les marges de la balise figure pour pouvoir centrer les photos */
+.host figure {
+  margin: 0px;
+}
+
+/* Mise en forme des images */
+.host img {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 190px;
+    height: 80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  /* Mise en forme étoiles Section1 */
 .host .stars {
     text-align: left;
     display:flex;
@@ -300,63 +364,6 @@ input {
   font-weight: bold;
   padding-left: 1px;
 }
-
-/* Mise en forme Afficher plus bas de section */
-#showmore p {
-  font-weight: bold;
-  font-size: 10px;
-}
-
-#showmore {
-  padding-left: 50px;
-  padding-top:20px;
-}
-
-/* Mise en forme Ensemble des lieux */
-#lieux {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  justify-content: space-around;
-}
-
-/* Mise en forme première ligne */
-#lieux1 {
-  display: flex;
-  overflow: hidden;
-}
-
-/* Mise en forme deuxième ligne */
-#lieux2 {
-  display: flex;
-  overflow: hidden;
-}
-
-/* Mise en forme contenants blancs */
-.host {
-    border-radius: 20px;
-    background-color: #ffffff;
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    overflow:hidden;
-  }
-
-/* Enlever les marges de la balise figure pour pouvoir centrer les photos */
-.host figure {
-  margin: 0px;
-}
-
-/* Mise en forme des images */
-.host img {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    width: 190px;
-    height: 80px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
 
 
 /* Mise en forme Section2 */
@@ -436,102 +443,85 @@ input {
     padding: 5px;
   }
 
-  /* Aligner Section1 & Section2 */
-  #Align {
-    display: grid;
-    width: 1150px;
-    grid-template-columns: 700px 400px;
-    align-items: start;
-    justify-content: space-between;
-    overflow: hidden;
+
+  #section3 {
+    width: 1200px;
   }
 
+  #section3 h2 {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
 
-#section3 {
-  width: 1200px;
-}
+  #activities {
+    display: flex;
+    width: 1100px;
+    justify-content: space-around;
+  }
 
-#section3 h2
-{
-  padding-top: 30px;
-  font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 15px;
-  margin-left: 0px;
-}
+  #activities figure {
+    margin: 0px;
+  }
 
-#activities
-{
-  display: flex;
-  width: 1100px;
-  justify-content: space-around;
-}
+  .activites1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 300px;
+    height: 440px;
+    padding-bottom: 15px;
+  }
 
-#activities figure {
-  margin: 0px;
-}
+  .activites1 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+  }
 
-.activites1
-{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 300px;
-  height: 440px;
-  padding-bottom: 15px;
-}
+  .activites1 h3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    margin: 0px;
+    border-top: transparent;
+    box-shadow: lightslategray 0px 0px 5px 0px;
+  }
 
-.activites1 img
-{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-size: cover;
-  width: 90%;
-  height: 90%;
-}
+  .activites2 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 300px;
+    height: 106px;
+    overflow: hidden;
+    padding: 15px;
+  }
 
-.activites1 h3 {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 300px;
-  height: 25px;
-  padding-top: 10px;
-  padding-left: 10px;
-  overflow: hidden;
-  margin: 0px;
-  border-top: transparent;
-  box-shadow: lightslategray 0px 0px 5px 0px;
-}
+  .activites2 h3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 220px;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: lightslategray 0px 0px 2px 0px;
+  }
 
-.activites2
-{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 300px;
-  height: 106px;
-  overflow: hidden;
-  padding:15px
-}
-
-.activites2 h3
-{
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 220px;
-  height: 25px;
-  padding-top: 10px;
-  padding-left: 10px;
-  box-shadow: lightslategray 0px 0px 2px 0px;
-}
-
-.activites2 img
-{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 80%;
-  height: 80%;
-  overflow: hidden;
-  background-size: cover;
-}
+  .activites2 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    background-size: cover;
+  }
 
 .flex
 {
@@ -565,5 +555,509 @@ footer {
     line-height: 20px;
     }
   
-
 }
+
+
+/* ---------------------------- MEDIA QUERIES ------------------------------ */
+
+
+
+/* ECRAN SMARTPHONE */
+
+@media screen and (max-width: 500px) {
+ 
+#logo{
+    width: 20%;
+    margin-left: 10px;
+    }   
+
+  /* Boutons Menu */
+.block1 {
+    float: right;
+    width: 20%;
+    }     
+  
+.block2 {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    }      
+  
+  #menu button {
+            background-color: transparent;
+            cursor:pointer;
+            outline:none;
+              } 
+  
+/* Boutons Menu*/
+.top1 {
+        color: #0065fc;
+        border: transparent;
+        font-size: 15px;
+        }
+            
+.top2 {
+        color: black;
+        border: transparent;
+        font-size: 15px;
+        }
+            
+.top3 {
+          color: #0065fc;
+          font-weight: bold;
+          border: transparent;
+        }
+
+  
+/* Mise en forme paragraphe slogan */        
+#slogan {
+    width: 100%;
+    margin-top: 50px;
+    }
+
+#slogan h1{
+    margin: 10px;
+    width: 90%;
+    font-weight: bold;
+    font-size: 25px;
+    }
+
+#slogan p{
+    width: 100%;
+    font-weight: thin;
+    font-size: 15px;
+    }
+  
+  /* Mise en forme de l'ensemble filtre */
+  #filters {
+    width: auto;
+    display: block;
+    margin: 10px;
+  }
+
+  /* Mise en forme boutons filtres */
+  #filters button {
+  margin: auto;
+  width: auto;
+  border: transparent;
+  color: black;
+  background-color:transparent;
+  }
+  
+  /* Mise en forme texte filtre*/
+  #filters h2 {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Mise en forme filtres un à un */
+  .filter {
+      display: flex;
+      justify-content: flex-start;
+      justify-content: left;
+      border: 1px solid #DEEBFF;
+      border-radius: 25px / 25px;
+      padding-left: 0px;
+      padding-right: 10px;
+      margin:auto;
+      height: 35px;
+      width: auto;
+  }
+  
+  .filter button {
+    width: auto;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 10px;
+   }
+
+  .filter1 {
+    width: 30%;
+    display: inline-block;
+    margin-right: 10%;
+  }
+
+  .filter2 {
+    width: 28%;
+    margin-top: 3%;
+  }
+
+  .filter3 {
+    width: 38%;
+    margin-top: 3%;
+  }
+
+   /* Mise en forme effet au survol des filtres */
+   #filters a :hover {
+    color: #0065fc;
+    text-decoration:none;
+    outline: none;
+    }
+  
+  /* Icon filtres */
+  .icon {
+      text-align: center;
+      margin: 0px;
+      padding-top: 2px;
+      width: 30px;
+      height: auto;
+      border: 3px solid #DEEBFF;
+      background-color: #DEEBFF;
+      border-radius: 25px / 25px;
+      }
+
+  .infologo {
+    margin-left: 10px;
+  }
+
+  /* Bouton recherche dans son ensemble */
+  .search {
+  display: flex;
+  margin-left: 10px;
+  background-color: transparent;
+  align-items: center;
+  }
+
+  
+  /* Logo recherche */
+  .logorecherche {
+      text-align: center;
+      background-color: #f2f2f2;
+      color:black;
+      width: 30px;
+      height: 32px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  /* Input Marseille, France */
+  input {
+      width: 100%;
+      height: 28px;
+      border: 1px solid #f2f2f2;
+      font-weight: bolder;
+      padding-left: 20px;
+      margin: 0px;
+      padding-right: 0px;
+  }
+  
+  /* Bouton Rechercher*/
+  .button1 button{
+      width: 35px;
+      height: 32px;
+      border: 2px solid #0065fc;
+      background-color: #0065fc;
+      border-radius: 5px;
+      margin: 0px;
+      padding: 0px;
+      font-size:10px;
+      }
+
+/* Retirer le "Rechercher du bouton et le remplacer par le logo*/
+  .button1 span {
+    display:none;
+    }
+   
+  
+  /* Mise en forme Info sous les filtres */
+  #info{
+    display: flex;
+    width: auto;
+    align-items: center;
+    margin-bottom: 8px;
+    }
+    
+    #info p {
+    padding-top: 5px;
+    font-size: 10px;
+    margin-left: 8px;
+    }
+    
+  .infologo i {
+      text-align: center;
+      background-color:#ffffff;
+      border: 2px solid #f2f2f2;
+      width:12px;
+      height: 10px;
+      border-radius: 25px / 25px;
+      margin-top: 0px;
+      padding-top: 3px;
+    }
+ 
+
+ /* Inverser */    
+#align  {
+  display: flex;
+  flex-direction: column-reverse;
+  order:2;
+  }
+   
+
+    /* Mise en forme Section2 */
+    #aside {
+      text-align: center;
+      background-color: #f2f2f2;
+      width: 100%;
+      height: auto;
+      margin: 0px;
+      justify-content: space-around;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      }
+  
+  #aside h2 {
+      padding-top: 20px;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 10px;
+      font-size: 15px;
+    }
+  
+  /* Enlever les marges de la balisee figure */
+    .populaires figure {
+      margin: 0px;
+    }
+
+  
+  /* Mise en forme contenants blancs */
+    .populaires {
+      display: flex;
+      border-radius: 20px;
+      background-color: #ffffff;
+      width: 80%;
+      height: auto;
+      overflow: hidden;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      }
+  
+  /* Mise en forme du texte à droite de la photo */
+  .populaires h3 {
+    width: 100%;
+    text-align: left;
+    margin-left: 120px;
+    padding-top: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    }
+  
+  .populaires p {
+    width: 100%;
+    text-align: left;
+    margin-left: 120px;
+    font-size: 12px;
+    padding-top: 0px;
+    margin-top: 0px;
+    }
+  
+   .populaires .stars {
+    width: 100%;
+    text-align: left;
+    margin-left: 120px;
+    font-size: 10px;
+    margin-top: 35px;
+    }
+  
+  /* Mise en forme contenants Images */
+     .populaires img {
+      float: left;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      height: 95px;
+      width: 95px;
+      overflow: hidden;
+      padding: 5px;
+      }
+
+
+      /* Mise en forme Section 1 */
+  #section1 {
+      text-align: center;
+      background-color: #ffffff;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top: 5px;
+      }
+
+    /* Mise en forme Section1 Titre */
+    #section1 h2  {
+      padding-top: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 10px;
+      }
+
+/* Mise en forme Ensemble des lieux */
+  #lieux {
+    width: 100%;
+    overflow: hidden;
+    }
+
+/* Mise en forme contenants blancs */
+  .host {
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    height: 190px;
+    justify-content: left;
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow:hidden;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+    }
+
+/* Enlever les marges de la balise figure pour pouvoir centrer les photos */
+.host figure {
+  margin: 0px;
+  }
+
+/* Mise en forme des images */
+.host img {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    width: 99%;
+    height: 110px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+
+  
+/* Mise en forme étoiles Section1 */
+  .host .stars {
+      text-align: left;
+      display:flex;
+      padding-left: 10px;
+      padding-top: 0px;
+      font-size: 12px;
+    }
+  
+  /* Mise en forme texte Section1: titre du lieu */
+  .host h3 {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    }
+  
+  /* Mise en forme texte Section1: prix du lieux */
+  .host p {
+    text-align: left;
+    display:flex;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 12px;
+    }
+  
+  /* Mise en gras du prix et décollement à gauche */
+  .host p strong {
+    font-weight: bold;
+    padding-left: 1px;
+    }
+  
+  /* Mise en forme Afficher plus bas de section */
+  
+  #showmore {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    }
+
+  #showmore p {
+      font-weight: bold;
+      font-size: 10px;
+      }  
+  
+ /* Mise en forme Section 3 */
+  
+  #section3 {
+    width: 100%;
+    }
+  
+  #section3 h2 {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    }
+  
+  
+  .activities {
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    height: 190px;
+    justify-content: left;
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+    }
+  
+  .activities img {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    }
+  
+  .activities h3 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  
+
+   /* Mise en forme Footer*/
+  
+  footer {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    }
+  
+  .more {
+    width:100%;
+    padding-left: 25px;
+    justify-content: center;
+    }
+  
+  .more h2 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 20px;
+    }
+  
+  .more ul {
+      font-size: 12px;
+      padding-top: 5px;
+      padding-left:20px;
+      line-height: 20px;
+      }
+    
+  }
+  
+    }

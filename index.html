@@ -15,17 +15,25 @@
 	<!--  Header  -->
     <header>
 
+<!--  Insertion logo -->
+<div id="logo"><a href="#log"><img src="images/logo/Reservia.svg" alt="logo reservia"></a>
+</div>
+
 <!--MENU-->
 
 <div id="menu">
 
 <nav>
 	<ul>
-		<li><a href="#section1"><button class="top1">Hébergements</button></a></li>
-		<li><a href="#section3"><button class="top2"><strong>S'inscire</strong></button></a></li>
+		<div class="block1">
+			<li><a href="#"><button class="top3">S'inscrire</button></a></li>
+		</div>
+		<div class="block2">
+			<li><a href="#section1"><button class="top1">Hébergements</button></a></li>
+		<li><a href="#section3"><button class="top2">Activités</button></a></li>
+		</div>
 	</ul>
 </nav>
-		<a href="#"><button class="top3">Activités</button></a>
 
 <!-- J'ai sortis cet élément du Nav pour la manipulation du flex + media query -->
 </div>
@@ -33,10 +41,6 @@
 
 <!--  Main  -->
 <main>
-
-<!--  Insertion logo -->
-<div id="logo"><a href="#log"><img src="images/logo/Reservia.svg" alt="logo reservia"></a>
-</div>
 
 <!--  Titre + Slogan -->
 <header id="slogan" class="slogan">
@@ -49,9 +53,7 @@
 	<div>
 	<form method="post" action="traitement.php">
 		<div class="logorecherche">
-			<span style="font-size: 8px; color:#000000;">
-				<i class="fas fa-map-marker-alt"></i>
-			</span>
+				<i class="fas fa-map-marker-alt" style="font-size: 10px; color:#000000;"></i>
 		</div>		
 	</div>
 	<div>
@@ -59,6 +61,7 @@
 	</div>
 	<div class="button1">
 			<button>
+				<i class="fas fa-search" style="font-size: 12px; color:#f2f2f2;"></i>
 				<span>Rechercher</span>
 			</button>
 	</div>
@@ -71,30 +74,30 @@
 
 	<h2>Filtres</h2>
 		
-    	<div> 
+    	<div class="filter1"> 
     		<ul class="filter">
-				<li class="icon"><span style="font-size: 10px; color:#0065FC;"><i class="fas fa-money-bill-wave-alt"></i></span></li>
+				<li class="icon"><span style="font-size: 12px; color:#0065FC;"><i class="fas fa-money-bill-wave-alt"></i></span></li>
 				<li><a href=""><button>Economique</button></a></li>
 			</ul>
     	</div>
 
-		<div> 
+		<div class="filter1"> 
     		<ul class="filter">
-				<li class="icon"><span style="font-size: 10px; color:#0065FC;"><i class="fas fa-child"></i></span></li>
+				<li class="icon"><span style="font-size: 12px; color:#0065FC;"><i class="fas fa-child"></i></span></li>
 				<li><a href=""><button>Familial</button></a></li>
 			</ul>
 		</div>
 
-		<div> 
+		<div class="filter2"> 
     		<ul class="filter">
-				<li class="icon"><span style="font-size: 10px; color:#0065FC;"><i class="fas fa-heart"></i></span></li>
+				<li class="icon"><span style="font-size: 12px; color:#0065FC;"><i class="fas fa-heart"></i></span></li>
 				<li><a href=""><button>Romantique</button></a></li>
 			</ul>
 		</div>
 
-		<div> 
+		<div class="filter3"> 
     		<ul class="filter">
-				<li class="icon"><span style="font-size: 10px; color:#0065FC;"><i class="fas fa-dog"></i></span></li>
+				<li class="icon"><span style="font-size: 12px; color:#0065FC;"><i class="fas fa-dog"></i></span></li>
 				<li><a href=""><button>Animaux autorisés</button></a></li>
 			</ul>
 		</div>
@@ -106,7 +109,7 @@
 			<i class="fas fa-info"></i>
 		</span>
 	</div> 
-		<p> Plus de 500 logements sont disponibles dans cette ville</p> 
+		<p>Plus de 500 logements sont disponibles dans cette ville</p> 
 </div>
 	
  <div id="Align">
@@ -179,7 +182,7 @@
 						<article class ="host">
 							<a href="#">
 								<figure>
-									<img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer">
+									<img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer">
 										<h3>Hôtel de la mer</h3>
 								</figure>
     									<p>Nuit à partir de <strong>46€</strong></p>
@@ -214,7 +217,7 @@
     					<article class ="host">
 							<a href="#">
 								<figure>
-									<img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Amina">
+									<img src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Amina">
     									<h3>Hôtel chez Amina</h3>
 								</figure>
     									<p>Nuit à partir de <strong>96€</strong></p>
@@ -231,7 +234,7 @@
 	</div> 
 	</div>
 	<div id="showmore">
-    	<p>Afficher plus</p>
+    	<a href="#">Afficher plus</a>
 	</div>	
 
 </section>
@@ -246,7 +249,7 @@
 	<article class ="populaires">
 		<a href="#">
 			<figure>
-					<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="emile">
+					<img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="emile">
 			
 				<h3>Hôtel Le soleil du matin</h3>
 			</figure>
@@ -302,70 +305,62 @@
 <!-- Section 3  -->
 <!-- Les class Activites1 sont les grandes photos et les class Activites2 sont les petites photos  -->
 <section id="section3">
-	
-		<h2>Activités à Marseille</h2>
 
-<div id="activities" class="activities">
+	<h2>Activités à Marseille</h2>
 
-	<article class ="activites1">
-		<a href="#">
-			<figure>
-				<img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="port">
-    			<h3>Vieux Port</h3>
-			</figure>
-		</a>
-	</article>
+<div class="activities">
+	<a class="card card1" href="#">
+		<div class="imgForm">
+			<img class="imgCard" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="port">
+		</div>
+		<h3>Vieux Port</h3>
+	</a>
+</div>	
 
-	<div class="flex">
-    <article class ="activites2">
-		<a href="#">
-			<figure>
-				<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort">
-    			<h3>Fort de Pomègues</h3>
-			</figure>
-		</a>
-    </article>
-
-    <article class ="activites2">
-		<a href="#">
-			<figure>
-				<img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="frioul">
-    			<h3>îles du Frioul</h3>
-			</figure>
-		</a>
-    </article>
-	</div>
-
-    <article class ="activites1">
-		<a href="#">
-			<figure>
-				<img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="calanques">
-    			<h3>Parc National des Calanques</h3>
-			</figure>
-		</a>
-    </article>
-
-	<div class="flex">
-    <article class ="activites2">
-		<a href="#">
-			<figure>
-				<img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="NDG">
-    			<h3>Notre-Dame-de-la-Garde</h3>
-			</figure>
-		</a>
-    </article>
-
-    <article class ="activites2">
-		<a href="#">
-			<figure>
-				<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp">
-    			<h3>Parc Longchamp</h3>
-			</figure>
-		</a>
-    </article>
-	
-	</div>
+<div class="activities">
+	<a class="card card2" href="#">
+		<div class="imgForm">
+			<img class="imgCard" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort">
+		</div>
+		<h3>Fort de Pomègues</h3>
+	</a>
 </div>
+
+<div class="activities">
+	<a class="card card3" href="#">
+		<div class="imgForm">
+			<img class="imgCard" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="frioul">
+		</div>
+		<h3>îles du Frioul</h3>
+	</a>
+</div>	
+
+<div class="activities">
+	<a class="card card4" href="#">
+		<div class="imgForm">
+			<img class="imgCard" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="calanques">
+		</div>
+		<h3>Parc National des Calanques</h3>
+	</a>
+</div>	
+
+<div class="activities">
+	<a class="card card5" href="#">
+		<div class="imgForm">
+			<img class="imgCard" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="NDG">
+		</div>
+		<h3>Notre-Dame-de-la-Garde</h3>
+	</a>
+</div>
+
+<div class="activities">
+	<a class="card card6" href="#">
+		<div class="imgForm">
+			<img class="imgCard" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp">
+		</div>
+		<h3>Parc Longchamp</h3>
+	</a>
+</div>	
 </section>
 
 </main>
