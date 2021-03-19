@@ -50,7 +50,6 @@ ul {
 
 /* Boutons Menu */
 #menu nav {
-        display: inline-block;
         width: auto;
         float: right;
         margin-right: 20%;
