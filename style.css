@@ -49,10 +49,10 @@ ul {
 
 
 /* Boutons Menu */
-#menu nav {
-        width: auto;
-        float: right;
-        margin-right: 20%;
+#menu .block{
+       display: grid;
+       grid-template-columns: 160px 130px 130px;
+        margin-left: 55%;
         margin-top: 0px;
         }
 
@@ -67,17 +67,23 @@ ul {
 .top1 {
       color: #0065fc;
       border: transparent;
+      padding: 0px;
+      margin: 0px;
       }
 
 .top2 {
       color: black;
       border: transparent;
+      padding: 0px;
+      margin: 0px;
       }
 
 .top3 {
         border: transparent;
         color: #0065fc;
         font-weight: bold;
+        padding: 0px;
+        margin: 0px;
       }
 
 /* Logo */
@@ -525,7 +531,7 @@ input {
   .image {
     background-color: darkmagenta;
     width: 300px;
-    height: auto;
+    height: 390px;
     overflow: hidden;
   }
 
